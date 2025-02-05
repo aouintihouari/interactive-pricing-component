@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1 class="title">Simple, traffic-based pricing</h1>
+        <p class="subtitle">
+          Sign-up for our 30-day trial.<br />
+          No credit card required.
+        </p>
+      </header>
+      <section class="content">
+        <div class="top-row">
+          <h2 class="content-title">100K PAGEVIEWS</h2>
+          <div class="subscription desktop">
+            <span class="payment">&dollar;8.00</span>&nbsp;
+            <span class="month">/ month</span>
+          </div>
+        </div>
+        <div class="slider-container">
+          <input class="slider" type="range" min="0" max="4" value="0" />
+        </div>
+        <div class="subscription mobile">
+          <span class="payment">&dollar;8.00</span>&nbsp;
+          <span class="month">/ month</span>
+        </div>
+        <div class="billing-container">
+          <p class="bill">Monthly Billing</p>
+          <label class="switch">
+            <input class="subscription-mode" type="checkbox" />
+            <span class="checkbox-slider"></span>
+          </label>
+          <p class="bill">Yearly Billing</p>
+          <p class="mobile discount">&nbsp; -&nbsp; 25%&nbsp;&nbsp;</p>
+          <p class="desktop discount">25% discount</p>
+        </div>
+        <div class="separation"></div>
+        <footer class="footer">
+          <ul>
+            <li>
+              <img
+                class="icon-check"
+                src="images/icon-check.svg"
+                alt="icon-check"
+              />&nbsp;&nbsp; Unlimited websites
+            </li>
+            <li>
+              <img
+                class="icon-check"
+                src="images/icon-check.svg"
+                alt="icon-check"
+              />&nbsp;&nbsp; 100% data ownership
+            </li>
+            <li>
+              <img
+                class="icon-check"
+                src="images/icon-check.svg"
+                alt="icon-check"
+              />&nbsp;&nbsp; Email reports
+            </li>
+          </ul>
+          <button class="start-trial">Start my trial</button>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
